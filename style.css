@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    /* max-width: 960px; */
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        height: 300px;
+    }
+}
+
+.header .menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .header menu {
+        flex-direction: column;
+    }
+}
+
+.header .menu li {
+    list-style: none;
+}
+
+.header .menu li a:hover {
+    color: blueviolet;
+}
+
+.menu-left {display: flex; gap: 10px; justify-content: flex-start;}
+.menu-right {display: flex; gap: 10px; margin-left: 120px; justify-content: flex-end;}
+
+.header .btn {
+    width: 120px;
+    height: 35px;
+    border-radius: 30px;
+    border: none;
+    background-color: #6c6cff;
+    color: white;
+    position: relative;
+    top: -7px;
+    cursor: pointer;
+}
+
+.header .btn:hover {
+    background-color: #6060da;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    max-width: 960px;
+    margin: 50px auto;
+}
+
+.main h1 {
+    font-size: 4em;
+}
+
+.main p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.tasks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 900px;
+}
+
+.tasks input {
+    margin: 5px;
+}
+
+.tasks li {
+    list-style: none;
+    margin: 10px;
+    background: #ddeefd;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main button {
+    height: 50px;
+    background-color: #6c6cff;
+    color: white;
+    border: none;
+    width: 150px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.main button:hover {
+    background-color: #6060da;
+}
+
+.banner {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background:  url("img/banner.png") top left repeat-X, url("img/banner_01.png") bottom left repeat-X, url(gradiente-esquerda.png) top left repeat-Y, url(gradiente-direita.png) top right repeat-Y;
+}
+
+.banner-title {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.patrocinadores {
+    display: flex;
+    gap: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.patrocinadores img {
+    width: 150px;
+}
+
+.video-text,
+.text-video {
+    display: flex;
+    max-width: 960px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.banner-animation {
+    background-color: #fefefe;
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.banner-animation h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.banner-animation p {
+    margin: 20px 0;
+}
+
+.video-text h1,
+.text-video h1 {
+    font-size: 2em;
+}
+
+.suport {
+    background: #f7f8f9;
+}
+
+.container {
+    max-width: 960px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.suport img {
+    width: 600px;
+}
+
+.suport h1 {
+    font-size: 2.5em;
+}
+
+.suport p {
+    font-size: 1.3em;
+    padding: 10px 0;
+}
+
+.links {
+    margin: 10px;
+}
+
+ul.links {
+    display: flex;
+    width: 350px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.experimente {
+    background: #2b2c5d;
+    color: white;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.experimente h1 {
+    font-size: 2.5em;
+}
+
+.experimente p {
+    font-size: 1.5em;
+}
+
+.container-two {
+    max-width: 960px;
+}
+
+.experimente button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+.footer {
+    height: 400px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.footer img {
+    width: 100px;
+}
+
+.footer p {
+    font-size: 0.9em;
+}
+
+.menus {
+    display: flex;
+}
+
+ul.menu-links {
+    width: 190px;
+}
+
+.menu-links li {
+    font-size: 0.9em;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.menu-links li a:hover {
+    color: blueviolet;
+}
+
+.menu-footer {
+    display: flex;
+    max-width: 960px;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.menu-footer li {
+    width: 150px;
+    list-style: none;
+    text-decoration: underline;
+}
+
+.menu-footer img {
+    width: 25px;
+}
+
+.imgs {
+    position: relative;
+    right: 50px;
+}
